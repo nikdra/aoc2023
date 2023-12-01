@@ -8,7 +8,7 @@ Here is a summary of the outputs produced together with the runtime (using Measu
 
 | Day | Part 1 solution | Part 2 solution  | Runtime      |
 |-----|-----------------|------------------|--------------|
-| 1   |   |  |  |
+| 1   | 56506 | 56017 | 17ms |
 | 2   |   |  |  |
 | 3   |   |  |  |
 | 4   |   |  |  |
