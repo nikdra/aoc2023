@@ -8,9 +8,9 @@ Here is a summary of the outputs produced together with the runtime (using Measu
 
 | Day | Part 1 solution | Part 2 solution  | Runtime      |
 |-----|-----------------|------------------|--------------|
-| 1   | 56506           | 56017            | 17ms |
-| 2   | 2476            | 54911            | 36ms |
-| 3   |  |  |  |
+| 1   | 56506           | 56017            | 54ms |
+| 2   | 2476            | 54911            | 48ms |
+| 3   | 546312          | 87449461         | 73ms |
 | 4   |  |  |  |
 | 5   |  |  |  |
 | 6   |  |  |  |
