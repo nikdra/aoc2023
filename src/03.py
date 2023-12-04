@@ -5,7 +5,6 @@ INP_PATH = 'data\\03'
 TEST_PATH = 'data\\03_test'
 
 from pprint import pprint
-from functools import reduce
 
 # read input
 # get a map of all inputs plus the array
@@ -60,7 +59,7 @@ def gear_ratios(schematic: dict, lines: list):
                         gears[star] = gears.get(star,[]) + [int(num)]
                     num = ''
     # a gear is any '*' which has exactly two numbers adjacent to it
-    return sum((reduce(lambda a,b: a*b, lst) for lst in map(lambda g: g[1], filter(lambda k: len(k[1]) == 2, gears.items()))))
+    return sum((lst[0] * lst[1] for lst in map(lambda g: g[1], filter(lambda k: len(k[1]) == 2, gears.items()))))
 
 
 # test solution on test and full input
