@@ -73,7 +73,7 @@ def count_inside(grid):
     # find the loop
     lp = loop(grid)
     # print the number of steps to be from the furthest point in the starting position (part 1)
-    pprint(int(len(lp)/2))
+    pprint(len(lp)//2)
     # remove tiles not on the loop, replace S with pipe
     grid = {xy: (grid[xy] if xy in lp else '.') for xy in grid}
     s = next(filter(lambda kv: kv[1] == 'S', grid.items()))[0]
@@ -89,11 +89,12 @@ def count_inside(grid):
             else: 
                 if char == '-': # along the axis we are reading - continue
                     continue
-                if char in ['|', 'L', 'J']: # F and 7 do not change the inside - outside perception since we are reading top-down
+                if char in ['|', 'F', '7']: # choose either F and 7 or L and J to change in-out perception 
                     inside = not inside
     return count
     
 
+# run soltion on test and full output
 test_inp = read_input(TEST2_PATH)
 pprint(count_inside(test_inp))
 inp = read_input(INP_PATH)

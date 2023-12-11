@@ -17,7 +17,7 @@ Here is a summary of the outputs produced together with the runtime (using Measu
 | 8   | 79ms |
 | 9   | 70ms |
 | 10  | 6746ms |
-| 11  |  |
+| 11  | 131ms |
 | 12  |  |
 | 13  |  |
 | 14  |  |
