@@ -31,15 +31,15 @@ def reflection_axis(points: dict, smudge = False):
     maxx, maxy = map(max, zip(*points.keys()))
     for xa in range(1,maxx):
         reflected = {reflect_x(*point,xa):c for point, c in points.items() if 2*xa+1-maxx <= point[0] <= xa}
-        diff = set(reflected.items()) - set(points.items())
-        if (reflected.items() <= points.items() and not smudge) or (smudge and len(diff) == 1):
+        diff = len(set(reflected.items()) - set(points.items()))
+        if diff - (1 if smudge else 0) == 0:
             return xa
     for ya in range(1,maxy):
         reflected = {reflect_y(*point,ya):c for point, c in points.items() if 2*ya+1-maxy <= point[1] <= ya}
-        diff = set(reflected.items()) - set(points.items())
-        if (reflected.items() <= points.items() and not smudge) or (smudge and len(diff) == 1):
+        diff = len(set(reflected.items()) - set(points.items()))
+        if diff - (1 if smudge else 0) == 0:
             return ya * 100
-    return 0
+    raise Exception('oh no')
 
 
 # run solution on test and full input
