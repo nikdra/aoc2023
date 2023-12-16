@@ -65,4 +65,3 @@ def focusing_power(boxes:list, values:dict):
 # run solution on test and full input
 pprint(focusing_power(*initialize(test_inp)))
 pprint(focusing_power(*initialize(inp)))
-
