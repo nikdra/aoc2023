@@ -1,9 +1,7 @@
 # aoc2023
 My attempts at solutions to advent of code 2023. You can run each solution by using `python src\<num>.py` or `pypy3 src\<num>.py`.
 
-Day 19 requires numpy.
-
-Here is a summary of the outputs produced together with the runtime (using Measure-Command on Windows):
+Here is a summary the estimated runtime (using Measure-Command on Windows) for each solution:
 
 | Day | Runtime      |
 |-----|--------------|
@@ -23,10 +21,10 @@ Here is a summary of the outputs produced together with the runtime (using Measu
 | 14  | 2522ms |
 | 15  | 72ms |
 | 16  | 3600ms |
-| 17  |  |
-| 18  |  |
-| 19  |  |
-| 20  |  |
+| 17  | 2803ms |
+| 18  | 64ms |
+| 19  | 72ms |
+| 20  | 1200ms |
 | 21  |  |
 | 22  |  |
 | 23  |  |
